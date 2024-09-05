@@ -20,7 +20,7 @@ var invitados = [
     ,{nombre:"DavidRodriguez",valor:"David Rodríguez"}
     ,{nombre:"PilarPortilla",valor:"Pilar Portilla y esposo"}
     ,{nombre:"EsperanzaPortilla",valor:"Esperanza Portilla y esposo"}
-    ,{nombre:"AlejandroPortilla",valor:"Alejandro Portilla, esposo e hijas"}
+    ,{nombre:"AlejandroPortilla",valor:"Alejandro Portilla, esposa e hijas"}
     ,{nombre:"MonicaPortilla",valor:"Monica Portilla y esposo"}
     ,{nombre:"FannyPortilla ",valor:"Fanny Portilla e hijo"}
     ,{nombre:"JuanCarlosEscandón",valor:"Juan Carlos Escandón y esposa"}
@@ -61,7 +61,7 @@ var invitados = [
     ,{nombre:"JhonBurgos",valor:"Jhon Burgos "}
     ,{nombre:"DianaRomero",valor:"Diana Romero"}
     ,{nombre:"JairoCaicedo",valor:"Jairo Caicedo "}
-    ,{nombre:"OrlandoCisnerosP",valor:"Orlando Cisneros P y esposa"}
+    ,{nombre:"OrlandoCisnerosP",valor:"Orlando Cisneros Patiño y esposa"}
     ,{nombre:"LilianaOrdoñez",valor:"Liliana Ordoñez e hijo"}
     ,{nombre:"XiomaraBecerra",valor:"Xiomara Becerra y esposo"}
     ,{nombre:"LauraCisneros",valor:"Alex Marin, Esposa e hija"}
@@ -91,3 +91,29 @@ function homologarValorInvitado() {
 
 // Llamar a la función para homologar y mostrar el valor
 homologarValorInvitado();
+
+
+function adaptFontSize() {
+    const inputText = document.getElementById("invitadoUrl").textContent;
+    const textLength = inputText.length;
+  
+    let fontSizeMin;
+    let fontSizeMax;
+  
+    if (textLength <= 15) {
+      fontSizeMax = '3.5rem';  // Texto corto, tamaño de letra grande
+      fontSizeMin = '3.1rem';
+    } else if (textLength <= 25) {
+      fontSizeMax = '3rem';  // Texto moderado, tamaño mediano
+      fontSizeMin = '2.3rem';
+    } else {
+      fontSizeMax = '2.79rem';  // Texto muy largo, tamaño mínimo
+      fontSizeMin = '2rem';
+    }
+  
+    const txtInvitadoElement = document.querySelector('.txtInvitado');
+    txtInvitadoElement.style.setProperty('font-size', `clamp(${fontSizeMin}, 5vw, ${fontSizeMax})`);
+  }
+
+window.onload = adaptFontSize;
+document.getElementById("invitadoUrl").addEventListener("input", adaptFontSize);
