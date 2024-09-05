@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitacion de boda</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+            var urlParams = new URLSearchParams(window.location.search);
+            var valor = urlParams.get('invitado');
+
+        </script>
+</head>
+
+
+<body>
+    <audio id="background-audio" src="audio.mp3" autoplay loop>
+        Tu navegador no soporta el elemento de audio.
+    </audio>
+    <section class="section-1">
+        <h2></h2>
+    </section>
+
+    <section class="section-2">
+        <div class="container">
+
+            <div class="col-sm">
+                <br><br><br>
+                <span class="txtInvitado" id="invitadoUrl"></span>
+                <br><br><br><br><br><br><br><br><br><br><br><br>
+                <br><br><br><br><br><br><br><br><br><br><br><br>
+                <br><br><br><br><br><br><br><br><br><br><br><br>
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+    <section class="section-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm">
+                    <div class="d-grid gap-2 col-6 mx-auto">
+                        <button class="btn custom-btn-2 btn-lg" id="btnConfirmar" 
+                        onclick="abrirWhatsApp()">Confirmar asistencia</button>
+                                <script>
+                                    function abrirWhatsApp() {
+                                        // Número de teléfono al que se enviará el mensaje
+                                        var telefono = '+573005170768';
+
+                                        // Mensaje predefinido (opcional)
+                                        var mensaje = 'Hola, ¿cómo estás? confirmo asistencia a la boda de Daniela y David soy: ' + valor;
+
+                                        // Construir el enlace de WhatsApp
+                                        var enlaceWhatsApp = 'https://wa.me/' + telefono + '?text=' + encodeURIComponent(mensaje);
+
+                                        // Abrir enlace en una nueva pestaña
+                                        window.open(enlaceWhatsApp);
+                                    }
+                                </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+    <script src="estilo.js"></script>
+
+
+</body>
+
+</html>

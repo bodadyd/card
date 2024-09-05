@@ -1,0 +1,154 @@
+/* Estilo para la sección con la imagen de fondo */
+.section-1 {
+    position: relative; /* Necesario para el posicionamiento absoluto del contenido */
+    height: 100vh; /* Ajusta la altura según sea necesario */
+    background-image: url('Imagenes/1.png'); /* Ruta de la imagen de fondo */
+    background-size: contain; /* Ajusta la imagen para que cubra todo el contenedor */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: center; /* Centra la imagen en el contenedor */
+    display: flex; /* Utiliza flexbox para centrar el contenido */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    color: white; /* Ajusta el color del texto para que sea legible sobre la imagen */
+    text-align: center; /* Centra el texto */
+    
+    
+}
+
+/* Estilo para el contenido dentro de la sección */
+.section-1 .content {
+    background: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para mejorar la legibilidad del texto */
+    padding: 20px;
+    border-radius: 10px; /* Opcional: añade bordes redondeados */
+    max-width: 100%; /* Limita el ancho del contenido */
+}
+
+
+
+.section-2 {
+    position: relative; /* Necesario para el posicionamiento absoluto del contenido */
+    height: 100vh; /* Ajusta la altura según sea necesario */
+    background-image: url('Imagenes/2.png'); /* Ruta de la imagen de fondo */
+    background-size: contain; /* Ajusta la imagen para que cubra todo el contenedor */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: center; /* Centra la imagen en el contenedor */
+    display: flex; /* Utiliza flexbox para centrar el contenido */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    color: black; /* Ajusta el color del texto para que sea legible sobre la imagen */
+    text-align: center; /* Centra el texto */
+    
+}
+
+/* Estilo para el contenido dentro de la sección */
+.section-2 .content {
+    background: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para mejorar la legibilidad del texto */
+    padding: 20px;
+    border-radius: 10px; /* Opcional: añade bordes redondeados */
+    max-width: 100%; /* Limita el ancho del contenido */
+}
+
+
+.section-3 {
+    position: relative; /* Necesario para el posicionamiento absoluto del contenido */
+    height: 100vh; /* Ajusta la altura según sea necesario */
+    background-image: url('Imagenes/3.png'); /* Ruta de la imagen de fondo */
+    background-size: contain; /* Ajusta la imagen para que cubra todo el contenedor */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: center; /* Centra la imagen en el contenedor */
+    display: flex; /* Utiliza flexbox para centrar el contenido */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    color: black; /* Ajusta el color del texto para que sea legible sobre la imagen */
+    text-align: center; /* Centra el texto */
+    
+}
+
+/* Estilo para el contenido dentro de la sección */
+.section-3 .content {
+    background: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para mejorar la legibilidad del texto */
+    padding: 20px;
+    border-radius: 10px; /* Opcional: añade bordes redondeados */
+    max-width: 100%; /* Limita el ancho del contenido */
+}
+
+:root {
+    --custom-color-1: #C2613E; /* Color personalizado para el primer botón */
+    --custom-color-1-hover: #A24D2E; /* Color de hover personalizado para el primer botón */
+    --custom-color-2: #667083; /* Color personalizado para el segundo botón */
+    --custom-color-2-hover: black; /* Color de hover personalizado para el segundo botón */
+}
+
+.custom-btn-1 {
+    background-color: var(--custom-color-1) !important; /* Utiliza la variable personalizada */
+    border-color: var(--custom-color-1) !important; /* Utiliza la variable personalizada */
+    color: black; /* Color del texto */
+}
+
+.custom-btn-1:hover {
+    background-color: var(--custom-color-1-hover) !important; /* Utiliza la variable personalizada para el hover */
+    border-color: var(--custom-color-1-hover) !important; /* Utiliza la variable personalizada para el hover */
+}
+
+.custom-btn-2 {
+    background-color: var(--custom-color-2) !important; /* Utiliza la variable personalizada */
+    border-color: var(--custom-color-2) !important; /* Utiliza la variable personalizada */
+    color: black; /* Color del texto */
+    position: absolute;
+    top: 40%; /* Ajusta el valor para colocar el botón verticalmente */
+    left: 58%; /* Ajusta el valor para colocar el botón horizontalmente */
+    transform: translate(-50%, -50%); /* Centra el botón en el punto indicado */
+    padding: 10px 20px;
+    background-color: #667083;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 10; /* Asegura que el botón esté encima de la imagen */
+}
+
+.custom-btn-2:hover {
+    background-color: var(--custom-color-2-hover) !important; /* Utiliza la variable personalizada para el hover */
+    border-color: var(--custom-color-2-hover) !important; /* Utiliza la variable personalizada para el hover */
+}
+.section-r {
+    display: none; /* La sección está oculta por defecto */
+    margin-top: 20px;
+    padding: 10px 20px; /* Reduce el padding para hacer la sección más pequeña */
+    background-color: #FFFAF7;
+    border: 1px solid #86895D;
+    border-radius: 5px;
+    max-width: 400px; /* Establece un ancho máximo más pequeño */
+    margin: 20px auto; /* Centra la sección horizontalmente */
+    font-size: 16px; /* Cambia el tamaño de la letra a 16px */
+    text-align: justify; /* Justifica el texto */
+}
+
+.section-c {
+    display: none; /* La sección está oculta por defecto */
+    margin-top: 20px;
+    padding: 10px 20px; /* Reduce el padding para hacer la sección más pequeña */
+    background-color: #FFFAF7;
+    border: 1px solid #A25336;
+    border-radius: 5px;
+    max-width: 400px; /* Establece un ancho máximo más pequeño */
+    margin: 20px auto; /* Centra la sección horizontalmente */
+    font-size: 15px; /* Cambia el tamaño de la letra a 16px */
+    text-align: justify; /* Justifica el texto */
+}
+
+
+.txtInvitado {
+    color: black;
+    font-family: cursive;
+    font-size: 35px; /* Tamaño de la letra */
+}
+
+.rectangulo {
+    width: 100%; /* Ajusta el ancho para que cubra todo el contenedor */
+    height: 12px; /* Ajusta la altura según sea necesario */
+    background: #000000; /* Color del rectángulo */
+    position: absolute; /* Posicionamiento absoluto */
+    left: 0;
+    top: -6px; /* Ajusta la posición vertical para que se superponga */
+}
