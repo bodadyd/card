@@ -173,17 +173,21 @@
     color: black;
     font-family: cursive;
     text-align: center;         /* Alinea el texto en el centro horizontalmente */
-    font-size: clamp(2rem, 5vw, 3rem); /* Tamaño del texto adaptable */
+    font-size: clamp(2rem, 5vw, 3rem); /* Tamaño del  texto adaptable */
     margin: 2rem;             /* Margen superior e inferior */
     cursor: pointer;
     vertical-align: top;
+    position: absolute;
+    top: clamp(5%, 5vw, 8%);
+    transform: translateX(-50%);
+    text-align: center;
 }
 
 /* Botones y otros elementos que deben ser responsivos */
 .custom-btn-2 {
     background-color: var(--custom-color-2);
     color: white;
-    padding: 1rem 2rem; /* Padding basado en unidades relativas */
+    padding: 0.5rem 1rem; /* Padding basado en unidades relativas */
     font-size: clamp(0.5rem, 2vw, 1rem); /* Tamaño del texto del botón que varía automáticamente */
     border: none;
     border-radius: 5px;
