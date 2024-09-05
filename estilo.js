@@ -102,7 +102,7 @@ function adaptFontSize() {
   
     if (textLength <= 15) {
       fontSizeMax = '3.5rem';  // Texto corto, tamaño de letra grande
-      fontSizeMin = '3.1rem';
+      fontSizeMin = '2.7rem';
     } else if (textLength <= 25) {
       fontSizeMax = '3rem';  // Texto moderado, tamaño mediano
       fontSizeMin = '2.3rem';
