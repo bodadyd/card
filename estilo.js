@@ -101,14 +101,14 @@ function adaptFontSize() {
     let fontSizeMax;
   
     if (textLength <= 15) {
-      fontSizeMax = '3.5rem';  // Texto corto, tamaño de letra grande
-      fontSizeMin = '2.7rem';
-    } else if (textLength <= 25) {
-      fontSizeMax = '3rem';  // Texto moderado, tamaño mediano
+      fontSizeMax = '3.0rem';  // Texto corto, tamaño de letra grande
       fontSizeMin = '2.3rem';
+    } else if (textLength <= 25) {
+      fontSizeMax = '2.5rem';  // Texto moderado, tamaño mediano
+      fontSizeMin = '1.8rem';
     } else {
-      fontSizeMax = '2.79rem';  // Texto muy largo, tamaño mínimo
-      fontSizeMin = '2rem';
+      fontSizeMax = '2.3rem';  // Texto muy largo, tamaño mínimo
+      fontSizeMin = '1.5rem';
     }
   
     const txtInvitadoElement = document.querySelector('.txtInvitado');
