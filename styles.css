@@ -173,7 +173,7 @@
     color: black;
     font-family: cursive;
     text-align: center;         /* Alinea el texto en el centro horizontalmente */
-    font-size: clamp(2rem, 5vw, 3rem); /* Tamaño del  texto adaptable */
+    font-size: clamp(1.5rem, 5vw, 2.5rem); /* Tamaño del  texto adaptable */
     margin: 2rem;             /* Margen superior e inferior */
     cursor: pointer;
     vertical-align: top;
