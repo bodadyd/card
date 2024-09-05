@@ -93,18 +93,16 @@
 .custom-btn-2 {
     background-color: var(--custom-color-2) !important; /* Utiliza la variable personalizada */
     border-color: var(--custom-color-2) !important; /* Utiliza la variable personalizada */
-    color: black; /* Color del texto */
-    position: absolute;
-    top: 40%; /* Ajusta el valor para colocar el botón verticalmente */
-    left: 58%; /* Ajusta el valor para colocar el botón horizontalmente */
-    transform: translate(-50%, -50%); /* Centra el botón en el punto indicado */
-    padding: 10px 20px;
-    background-color: #667083;
-    color: white;
+    color: white; /* Color del texto */
+    padding: 8px 15px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     z-index: 10; /* Asegura que el botón esté encima de la imagen */
+    /* Removed absolute positioning */
+    position: absolute;
+    left: 50%;
+    top: 50%;
 }
 
 .custom-btn-2:hover {
@@ -141,7 +139,10 @@
 .txtInvitado {
     color: black;
     font-family: cursive;
-    font-size: 35px; /* Tamaño de la letra */
+    font-size: 2rem; /* Tamaño de la letra */
+    margin: 0 auto;
+    text-align: center; /* Centramos el texto horizontalmente */
+    padding-top: 0px; /* Espacio desde la parte superior */
 }
 
 .rectangulo {
@@ -151,4 +152,50 @@
     position: absolute; /* Posicionamiento absoluto */
     left: 0;
     top: -6px; /* Ajusta la posición vertical para que se superponga */
+}
+
+
+/* Estilo para la sección */
+.section-1, .section-2, .section-3 {
+    position: relative;
+    min-height: 100vh; /* La sección toma el 100% de la altura de la pantalla */
+    background-size: cover; /* La imagen de fondo se ajusta automáticamente */
+    background-position: center; /* Centra la imagen de fondo */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Empuja el contenido hacia arriba */
+    align-items: center;
+    padding: 2rem;
+}
+
+/* Texto del invitado responsivo */
+.txtInvitado {
+    color: black;
+    font-family: cursive;
+    text-align: center;         /* Alinea el texto en el centro horizontalmente */
+    font-size: clamp(2rem, 5vw, 3rem); /* Tamaño del texto adaptable */
+    margin: 2rem;             /* Margen superior e inferior */
+    cursor: pointer;
+    vertical-align: top;
+}
+
+/* Botones y otros elementos que deben ser responsivos */
+.custom-btn-2 {
+    background-color: var(--custom-color-2);
+    color: white;
+    padding: 1rem 2rem; /* Padding basado en unidades relativas */
+    font-size: clamp(0.5rem, 2vw, 1rem); /* Tamaño del texto del botón que varía automáticamente */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+}
+
+/* Ajustes generales de responsividad */
+@media (max-width: 768px) {
+    .section-1, .section-2, .section-3 {
+        padding: 1rem;
+    }
 }
